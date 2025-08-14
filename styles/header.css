@@ -1,0 +1,58 @@
+body {
+    background-image: url(/images/background-image.svg);
+    margin: 0 auto;
+}
+
+header {
+    background-color: white;
+    margin: 40px 16px;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    position: relative;
+}
+
+.menu-options {
+    width: 100%;
+    background-color: white;
+    list-style-type: none;
+    position: absolute;
+}
+
+.menu-toggle {
+    width: 24px;
+    height: 24px;
+}
+
+input[type="checkbox"]:checked  {
+    display: none;
+}
+
+.menu-toggle img {
+    width: 24px;
+    height: 24px;
+}
+
+.logo {
+    background-color: white;
+    border-radius: 5px;
+    padding: 24px;
+    align-self: center;
+    box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.1);;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-download {
+    margin: 3px;
+    padding: 12px 6px;
+    border-radius: 3px;
+    border: none;
+    background-color: #5956E9;
+    color: white;
+    font-family:'Josefin Sans';
+    font-size: 10px;
+    font-weight: 600;
+}
