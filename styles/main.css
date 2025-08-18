@@ -1,8 +1,6 @@
-.block{
-    width: 90vw;
-    height: 400px;
-    margin: 0 auto;
-    background-color: #f0f0f0;
+main{
+    margin: 0;
+    overflow: hidden;
 }
 
 .first-section {
@@ -17,6 +15,7 @@
 .container {
     width: 363px;
     height: 358px;
+    left: 16px;
     position: relative;
     display: flex;
     align-items: center;
@@ -66,6 +65,8 @@
 }
 
 .smartphone {
+    width: 100%;
+    padding-left: 55px;
     height: 521px;
     z-index: 2;
     left: 0;

@@ -1,5 +1,5 @@
-body {
-    margin: 0 auto;
+body, html {
+    margin: 0;
 }
 
 header {
@@ -63,7 +63,7 @@ header {
 .menu-options {
     width: 103px;
     height: 250px;
-    position: absolute;
+    position: fixed;
     margin: 67px 0;
 
 }
