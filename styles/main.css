@@ -4,3 +4,69 @@
     margin: 0 auto;
     background-color: #f0f0f0;
 }
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/images/background-image.svg);
+    background-size: cover;
+
+}
+
+.container {
+    width: 363px;
+    height: 358px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.info {
+    width: 323px;
+    height: 318px;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+}
+.background {
+    right: 0;
+    box-sizing: border-box;
+    width: 323px;
+    height: 358px;
+    border: #7572FF 10px solid;
+    position: absolute;
+}
+
+.info-title{
+    font-family: 'Josefin Sans';
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 37.5px;
+    color: #5956E9;
+    margin-top: 20px;
+    margin: 30px 18px 18px
+}
+
+.info-text{
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #6C6C72;
+    margin: 0 12px 30px;
+}
+
+.info-download {
+    font-family:'Josefin Sans';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #232233;
+    margin: 0 18px;
+}
+
+.smartphone {
+    height: 521px;
+    z-index: 2;
+    left: 0;
+}
