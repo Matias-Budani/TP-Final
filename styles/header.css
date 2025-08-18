@@ -1,5 +1,4 @@
 body {
-    background-image: url(/images/background-image.svg);
     margin: 0 auto;
 }
 
@@ -10,27 +9,78 @@ header {
     justify-content: space-between;
     height: 40px;
     position: relative;
+    --menu-show: translateX(-100%);
+    align-self: stretch;
 }
 
-.menu-options {
-    width: 100%;
-    background-color: white;
-    list-style-type: none;
+.menu-toggle{
+    background-image: url(/images/menu-line.svg);
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    margin: 8px;
     position: absolute;
 }
 
-.menu-toggle {
-    width: 24px;
-    height: 24px;
+.nav-menu:has(.menu:checked) {
+    --menu-show: transform(translateX(0));
+
 }
 
-input[type="checkbox"]:checked  {
-    display: none;
+.menu-options-container {
+    position: fixed;
+    width: 267px;
+    height: 356px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0;
+    top: 80px;
+    left: 0;
+    transform: var(--menu-show);
+    transition: transform 0.5s;
+    z-index: 2;
 }
 
-.menu-toggle img {
-    width: 24px;
-    height: 24px;
+.close-menu {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 35px;
+    height: 35px;
+    background: #5956E9;
+    background-size: cover;
+    background-image: url(/images/menu-cross.svg);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --menu-show: translateX(-100%);
+}
+
+.menu-options {
+    width: 103px;
+    height: 250px;
+    position: absolute;
+    margin: 67px 0;
+
+}
+
+.menu-options li, a{
+    margin-top:25px;
+    font-family: 'josefin sans';
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.menu{
+    position: absolute;
+    opacity: 0;
 }
 
 .logo {

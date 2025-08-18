@@ -11,31 +11,29 @@
     <title>Appoly</title>
 </head>
 <body>
-    <header>
-        <nav class="nav-menu">
-            <label onclick="getElementById('close-menu').checked = false" class="menu-toggle" for="open-menu"><img src="/images/menu-line.svg" alt=""></label>
-            <input type="checkbox" class="menu" id="open-menu">
-                <!--  
-                    <ul class="menu-options">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Features</a></li>
-                    <li><a href="">Teams</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-                -->
-        </nav>
-        <nav class="logo">
-            <img src="/images/logo.svg" alt="">
-        </nav>
-        <button class="header-download">DOWNLOAD</button>
-    </header>
-    <main>
-        <section>
-            <div class="block">
+    <section class="first-section">
+        <header>
+            <nav class="nav-menu">
 
-            </div>
-        </section>
-    </main>
+                <input type="checkbox" class="menu" id="menu-toggle" hidden>
+
+                <label for="menu-toggle" class="menu-toggle">
+                </label> 
+
+                <div class="menu-options-container">
+                    <label class="close-menu" for="menu-toggle"></label>
+                    <ul class="menu-options">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">FEATURES</a></li>
+                    <li><a href="">TEAMS</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    </div>
+            </nav>
+            <nav class="logo">
+                <img src="/images/logo.svg" alt="">
+            </nav>
+            <button class="header-download">DOWNLOAD</button>
+        </header>
 </body>
 </html>
