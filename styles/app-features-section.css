@@ -1,0 +1,51 @@
+.app-features-section {
+  background-image: url(/images/background-image.svg);
+  display: flow-root;
+  color: white;
+}
+
+.app-features-title {
+    font-family: 'Josefin Sans';
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-align: center;
+    margin: 60px auto 18px;   
+}
+
+.app-features-subtitle {
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 38px;
+}
+
+.app-features-categories{
+    margin: 32px 0;
+}
+
+.app-features-category-image{
+    display: block;
+    margin: 0 auto;
+
+}
+
+.app-features-category-title{
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.app-features-category-info {
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin: 6px 76px 40px;
+}
