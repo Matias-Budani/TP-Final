@@ -73,13 +73,25 @@
         justify-items: start;
     }
 
+    .app-features-category p,
+    .app-features-category h3 {
+        width: 100%;
+    }
+
     .app-features-category:nth-child(1) {
         grid-column-start: 2;
     }
 
 
     .app-features-category:nth-child(n+2):nth-child(-n+3) {
-        grid-column-start: 1;
+        grid-column-start: 1;        
+    }
+
+    .app-features-category:nth-child(n+2):nth-child(-n+3) p, 
+    .app-features-category:nth-child(n+2):nth-child(-n+3) h3,
+    .app-features-category:nth-child(n+2):nth-child(-n+3) img {
+        float: right;
+        text-align: right;
     }
 
     .app-features-mockup {
@@ -92,8 +104,22 @@
         grid-row: 2;
     }
 
+    .app-features-category:nth-child(n+4):nth-child(-n+5) p,
+    .app-features-category:nth-child(n+4):nth-child(-n+5) h3,
+    .app-features-category:nth-child(n+4):nth-child(-n+5) img {
+        margin: 0;
+        text-align: left;
+    }
+
     .app-features-category:nth-last-child(1){
         grid-column-start: 2;
+    }
+
+    .app-features-category:nth-last-child(2) p,
+    .app-features-category:nth-last-child(2) h3,
+    .app-features-category:nth-last-child(2) img {
+        margin: 0;
+        text-align: left;
     }
 
     .app-features-category-info {
@@ -101,23 +127,8 @@
         width: 100%;
     }
 
-    #categoy-2{ 
-        background-color: red;
-    }
-    /* Pone info y titulo en un div texto y cambia aca abajo el dic texto por el category info*/ 
-    #category-2 .app-features-category-info {
-        text-align: right;
-    }
 
-    #category-4, #category-5 {
-        text-align: right;
-        place-items: end;
-        place-content: right;
-        background-color: blue;
-    }
+   
 
-    .app-features-category:nth-last-child(1), .app-features-category:nth-child(1) {
-        place-items: center;
-        text-align: center;
-    }
+
 }   
