@@ -3,6 +3,12 @@ main{
     overflow: hidden;
 }
 
+.promotional-section-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
 .promotional-section {
     display: flex;
     flex-direction: column;
@@ -13,6 +19,12 @@ main{
 }
 
 .donwload-wrapper {
+    width: 391px;
+    height: 381px;
+    display: relative;
+    width: 391px;
+    height: 381px;
+.donwload-wrapper {
     width: 363px;
     height: 358px;
     left: 16px;
@@ -21,7 +33,7 @@ main{
     align-items: center;
 }
 .donwload-info {
-    width: 323px;
+    width: 356px;
     height: 318px;
     background-color: white;
     position: absolute;
@@ -30,8 +42,8 @@ main{
 .background {
     right: 0;
     box-sizing: border-box;
-    width: 323px;
-    height: 358px;
+    width: 375px;
+    height: 381px;
     border: #7572FF 10px solid;
     position: absolute;
 }
@@ -55,31 +67,41 @@ main{
     margin: 0 12px 30px;
 }
 
-.info-download {
-    font-family:'Josefin Sans';
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 30px;
-    color: #232233;
-    margin: 0 18px;
-}
-
 .smartphone {
     width: 100%;
     padding-left: 55px;
     height: 521px;
-    z-index: 2;
     left: 0;
     object-fit: contain;
 }
 
-@media (min-width: 768px) and (max-width: 1279px) {
 
+@media (min-width: 768px) and (max-width: 1279px) {
     .promotional-section-container {
-        display: flex;
+        flex-direction: row;
+        gap: 55px;
     }
 
     .donwload-wrapper {
-        margin-left: 40px;
+        width: 391px;
+        height: 381px;
+        left: 40px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .smartphone {
+        flex-grow: 0;
+        padding-left: 0;
+        position: relative;
+    }
+
+    .background {
+        border: #7572FF 18px solid;
+    }
+
+    .about-us-main {
+        display: flex;
     }
 }
