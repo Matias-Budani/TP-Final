@@ -11,14 +11,65 @@ header {
     position: relative;
     --menu-show: translateX(-100%);
     align-self: stretch;
+    border-radius: 5px;
+}
+
+.header-contact {
+    width: 100%;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    position: absolute;
+    top: -95px;
+    left: 0;
+    margin-top: 28px;
+    font-family: 'Josefin Sans';
+    font-size: 1rem;
+    line-height: 24px;
+    display: none;
+}
+
+.header-direct-contact {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    font-weight: 400;
+}
+
+.logo img{
+    width: 167px
+}
+
+.header-email{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.header-phone{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.header-direct-contact h5{
+    margin: 0;
+}
+
+.header-social-media {
+    display: flex;
+    gap: 30px;
+    align-items: center;
 }
 
 .menu-toggle{
     background-image: url(/images/menu-line.svg);
     background-size: cover;
+    margin: 8px;
     width: 24px;
     height: 24px;
-    margin: 8px;
     position: absolute;
 }
 
@@ -68,14 +119,14 @@ header {
 
 }
 
-.menu-options li, a{
+.menu-options li, .menu-options a{
     margin-top:25px;
     font-family: 'josefin sans';
     font-weight: 600;
     font-size: 20px;
-    color: black;
     list-style-type: none;
     text-decoration: none;
+    color: #232233;
 }
 
 .menu{
@@ -86,7 +137,7 @@ header {
 .logo {
     background-color: white;
     border-radius: 5px;
-    padding: 24px;
+    padding: 24px 10px;
     align-self: center;
     box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.1);
     position: absolute;
@@ -105,4 +156,103 @@ header {
     font-family:'Josefin Sans';
     font-size: 10px;
     font-weight: 600;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    header {
+        height: 60px;
+        margin: 84px 40px;
+    }
+
+    .logo {
+        padding: 31px 16px;
+    }
+
+    .header-contact {
+        display: flex;
+    }
+
+    .menu-toggle{
+        margin: 18px
+    }
+    .header-download {
+        padding: 16px 12px 8px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .menu-options-container {
+        top: 144px;
+    }
+}
+
+@media (min-width: 1280px) {
+    header {
+        height: 60px;
+        margin: 84px 40px;
+    }
+
+    .logo {
+        padding: 31px 16px;
+    }
+
+    .header-contact {
+        display: flex;
+        margin-top: 35px;
+        top: -75px
+    }
+
+    .menu-toggle{
+        margin: 18px
+    }
+    .header-download {
+        padding: 16px 12px 8px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .menu-options-container {
+        display: contents;
+    }
+    
+    .nav-menu {
+        width: 100%;
+    }
+
+    .menu-options {
+        position: relative;
+        display: flex;
+        gap: 32px;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        left: 0;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .menu-options-left, .menu-options-right {
+        display: flex;
+        gap: 32px;
+    }
+
+    .menu-options-left {
+        margin-left: 52px;
+    }
+
+    .menu-options-left:first-child {
+        color: #5956E9;
+    }
+
+    .menu-options-right {
+        margin-right: 42px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .close-menu {
+        display: none;
+    }
 }

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/promotional-section.css">
     <link rel="stylesheet" href="styles/about-us-section.css">
+    <link rel="stylesheet" href="styles/app-features-section.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -14,33 +15,64 @@
 <body>
     <section class="promotional-section">
         <header>
-            <nav class="nav-menu">
-
-                <input type="checkbox" class="menu" id="menu-toggle" hidden>
-
-                <label for="menu-toggle" class="menu-toggle">
-                </label> 
-
-                <div class="menu-options-container">
-                    <label class="close-menu" for="menu-toggle"></label>
-                    <ul class="menu-options">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">FEATURES</a></li>
-                    <li><a href="#">TEAMS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+            <section class="header-contact">
+                <div class="header-direct-contact">
+                    <div class="header-email">
+                        <img src="images/mail-fill.svg" alt="">
+                        <p>info@youremail.com</p>
                     </div>
-            </nav>
-            <nav class="logo">
-                <img src="/images/logo.svg" alt="">
-            </nav>
-            <button class="header-download">DOWNLOAD</button>
+                    <div class="header-phone">
+                        <img src="images/phone-fill.svg" alt="">
+                        <p>(480) 555-0103</p>
+                    </div>
+                </div>
+                <div class="header-social-media">
+                    <a href="">
+                        <img src="images/facebook-fill.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/instagram-fill.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/twitter-fill.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/youtube-fill.svg" alt="">
+                    </a>
+                </div>
+            </section>
+                <nav class="nav-menu">
+
+                    <input type="checkbox" class="menu" id="menu-toggle" hidden>
+
+                    <label for="menu-toggle" class="menu-toggle">
+                    </label> 
+
+                    <div class="menu-options-container">
+                        <label class="close-menu" for="menu-toggle"></label>
+                        <ul class="menu-options">
+                            <div class="menu-options-left">
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">FEATURES</a></li>
+                            </div>
+                            <div class="menu-options-right">
+                                <li><a href="#">TEAMS</a></li>
+                                <li><a href="#">CONTACT</a></li>
+                                </div>
+                        </ul>
+                    </div>
+                </nav>
+                <nav class="logo">
+                    <img src="/images/logo.svg" alt="">
+                </nav>
+                <button class="header-download">DOWNLOAD</button>
         </header>
         <main>
             <div class="donwload-container">
                 <div class="donwload-info">
                     <h3 class="donwload-info-title">A GREAT APP MAKES YOUR LIFE BETTER</h3>
-                    <h5 class="donwload-info-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</h5>
+                    <p class="donwload-info-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
                     <h4 class="donwload-info-download">DOWNLOAD APP NOW</h4>
                     <div class="donwload-images">
                         <img src="" alt="imagen-1">
@@ -52,8 +84,8 @@
             <img class="smartphone" src="images/mobile-up-mockup.png" alt="">
         </section>
         <section class="about-us-section">
-            <h3 class="about-us-title">ABOUT OUR APP</h3>
-            <h5 class="about-us-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.</h5>
+            <h2 class="about-us-title">ABOUT OUR APP</h2>
+            <h4 class="about-us-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.</h4>
             <img class="about-us-mockup" src="images/android-smartphone-mockup.png" alt="">
             <div class="about-us-cards">
                 <div class="about-us-card">
@@ -76,6 +108,27 @@
                         <h3>BEST USER EXPERIENCE</h3>
                         <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="app-features-section">
+            <h2 class="app-features-title">APP FEATURES</h2>
+            <h4 class="app-features-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.</h4>
+            <div class="app-features-categories">
+                <div class="app-features-category">
+                    <img class="app-features-category-image" src="images/comment-icon.svg" alt="">
+                    <h3 class="app-features-category-title">FULL FREE CHAT</h3>
+                    <h5 class="app-features-category-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                </div>
+                <div class="app-features-category">
+                    <img class="app-features-category-image" src="images/browser.svg" alt="">
+                    <h3 class="app-features-category-title">UNLIMITED FEATURES</h3>
+                    <h5 class="app-features-category-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                </div>
+                <div class="app-features-category">
+                    <img class="app-features-category-image" src="images/vector.svg" alt="">
+                    <h3 class="app-features-category-title">AWESOME UI DESIGN</h3>
+                    <h5 class="app-features-category-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
                 </div>
             </div>
         </section>
