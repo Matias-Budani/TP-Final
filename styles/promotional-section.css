@@ -12,7 +12,7 @@ main{
 
 }
 
-.donwload-container {
+.donwload-wrapper {
     width: 363px;
     height: 358px;
     left: 16px;
@@ -71,4 +71,15 @@ main{
     z-index: 2;
     left: 0;
     object-fit: contain;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+
+    .promotional-section-container {
+        display: flex;
+    }
+
+    .donwload-wrapper {
+        margin-left: 40px;
+    }
 }
