@@ -1,6 +1,7 @@
 main{
     margin: 0;
     overflow: hidden;
+    width: 100%;
 }
 
 .promotional-section {
@@ -9,6 +10,7 @@ main{
     align-items: center;
     background-image: url(/images/background-image.png);
     background-size: cover;
+    padding-bottom: 120px;
 }
 
 .donwload-wrapper {
@@ -28,6 +30,8 @@ main{
     position: absolute;
     z-index: 1;
 }
+
+
 
 .background {
     right: 0;
@@ -56,6 +60,22 @@ main{
     color: #6C6C72;
     margin: 0 12px 30px;
 }
+.donwload-info-images {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.google-play-image {
+    width: 110px;
+    height:45px;
+    margin-right: 12px;
+    margin-top: 18px;
+}
+.app-store-image {
+    width: 110px;
+    height:45px;
+}
 
 .smartphone {
     width: 100%;
@@ -65,17 +85,19 @@ main{
     object-fit: contain;
 }
 
-
 @media (min-width: 768px) and (max-width: 1279px) {
     .promotional-section-container {
-        flex-direction: row;
+        display: flex;
         gap: 55px;
+        width: 100%;
     }
+
 
     .donwload-wrapper {
         width: 391px;
         height: 381px;
-        left: 40px;
+        left: 0;
+        margin-left: 135px;
         position: relative;
         display: flex;
         align-items: center;
@@ -91,15 +113,89 @@ main{
     .donwload-info {
         width: 356px;
         height: 318px;
+        left: 0;
     }
 
     .background {
         width: 375px;
         height: 381px;
         border: #7572FF 18px solid;
+        left: 17px;
     }
 
     .about-us-main {
         display: flex;
+    }
+}
+@media (min-width: 1280px) {
+    .promotional-section-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 55px;
+        margin-left: 135px;
+    }
+
+    .donwload-wrapper {
+        width: 620px;
+        height: 535px;
+        left: 40px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .smartphone {
+        padding-left: 0;
+        position: relative;
+        display: block;
+    }
+
+    .donwload-info {
+        width: 570px;
+        height: 432px;
+        left: 0;
+    }
+
+    .background {
+        width: 570px;
+        height: 535px;
+        border: #7572FF 18px solid;
+        left: 32px;
+    }
+
+    .smartphone {
+        margin-right: -311px;
+    }
+
+    .about-us-main {
+        display: flex;
+    }
+
+    .donwload-info-title {
+        font-family: 'Josefin Sans';
+        font-weight: 700;
+        font-size: 48.83px;
+        line-height: 130%;
+    }
+
+    .donwload-info-text {
+        font-family: 'Josefin Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .donwload-info-download {
+        font-family: 'Josefin Sans';
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 37.5px;
+        margin-left: 35px;
+    }
+
+    .google-play-image {
+        margin-left: 35px;
     }
 }

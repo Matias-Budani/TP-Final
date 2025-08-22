@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 343px;
+  height: 310px;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+      gap: 20px;
+
+}
+
+.contact-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-card-image-container {
+    width: 50px;
+    height: 50px;
+    background-color: #5956E9;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.contact-card-image-container img{
+    width: 20px;
+    height: 20px;
+}
+
+.contact-card h3 {
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #232233;
+    margin: 16px 0 8px 0;
+}
+
+.contact-cards-separator {
+    width: 117px;
+    height: 4px;
+    background-color: #232233;
+}
+
+footer {
+  position: relative;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding-top: 190px;
+  background-color: #232233;
+  padding: 190px 16px 16px 16px;
+  color: #fff;
+  gap: 60px;
+}
+
+.footer-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+p {
+  color: #fff;
+}
+
+.footer-heading {
+  color: #fff;
+  padding-bottom: 12px;
+  font-size: 2rem;
+}
+
+.footer-logo-section {
+  box-sizing: border-box;
+}
+
+.footer-logo-section p {
+  line-height: 24px;
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.social-media-container {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+  margin-top: 38px;
+}
+.separator {
+  width: 1px;
+  height: 24px;
+  background-color: #fff;
+}
+
+.footer-second-section h6 {
+  font-size: 1.6rem;
+  margin-bottom: 11px;
+  line-height: 2rem;
+}
+
+.footer-second-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-second-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-news-letter-section h6 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  line-height: 30px;
+}
+
+.footer-news-letter-section p {
+  font-size: 1rem;
+  margin-bottom: 24px;
+  margin-top: 13px;
+}
+
+.footer-email-input-container {
+  height: 50px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+}
+
+.footer-email-input {
+  display: flex;
+  width: 100%;
+  border: none;
+  padding-left: 12px;
+}
+
+.footer-email-button {
+  border: none;
+  background-color: #5956e9;
+  padding: 11px;
+  border-radius: 4px;
+}
+
+.copyright-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  padding: 20px 42px 28px 42px;
+}
+
+.copyright-container img {
+  margin-right: 18px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .contact-cards {
+    width: 689px;
+    height: 150px;
+    }
+
+  footer {
+    padding-right: 136px;
+    padding-left: 136px;
+  }
+
+  .footer-sections {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .footer-logo-section {
+    width: 30%;
+  }
+
+  .footer-second-section {
+    width: 30%;
+  }
+
+  .footer-news-letter-section {
+    width: 30%;
+  }
+
+  .contact-cards {
+    flex-direction: row;
+  }
+
+  .contact-cards-separator {
+    height: 106px;
+    width: 3px;
+  }
+}
+
+
+
+
+
+

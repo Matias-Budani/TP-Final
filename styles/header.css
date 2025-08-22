@@ -121,6 +121,7 @@ header {
 
 .menu-options li, .menu-options a{
     margin-top:25px;
+    margin-left: 40px;
     font-family: 'josefin sans';
     font-weight: 600;
     font-size: 20px;
@@ -236,8 +237,23 @@ header {
         gap: 32px;
     }
 
+    .menu-options-left ul, .menu-options-right ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-options-left li a, .menu-options-right li a{
+        list-style: none;
+        margin: 0;
+    }
+
+    .menu-options-left ul li:nth-child(1) a {
+        color: #5956E9;
+    }
+
     .menu-options-left {
         margin-left: 52px;
+        align-self: start;
     }
 
     .menu-options-left:first-child {
