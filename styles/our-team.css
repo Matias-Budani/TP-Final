@@ -1,0 +1,116 @@
+.our-team-section{
+    padding: 67px 0 217px;
+}
+
+.our-team-title{
+    text-align: center;
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37.5px;
+    color: #232233;
+}
+.our-team-info {
+    text-align: center;
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: #6C6C72;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.our-team-cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.our-team-card {
+    box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.1);
+    margin: 0 12px 0 15px;
+    height: 580px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.our-team-card h3 {
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 47.25px;
+    color: #232233;
+    margin: 0;
+    margin-top: 66px;
+}
+
+.our-team-card h4 {
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #6C6C72;
+    margin: 0;
+}
+
+.our-team-card p {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6C6C72;
+    margin: 14px 15px 29px
+}
+
+.profile-picture-member {
+    width: 198px;
+    height: 198px;
+    border-radius: 50%;
+}
+
+.profile-picture-background {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 220px;
+    background-image: url(/images/profile-background-top-left.svg),
+                      url(/images/profile-background-top-right.svg),
+                      url(/images/profile-background-bottom-left.svg),
+                      url(/images/profile-background-bottom-right.svg);
+    background-position: top left, top right, bottom left, bottom right;
+    background-repeat: no-repeat;
+    margin-top: 29px;
+}
+
+
+.social-media-member {
+    display: flex;
+    justify-content: center;
+    gap: 31px
+}
+
+.social-media-separator {
+    width: 1px;
+    height: 23px;
+    background-color: #6C6C72;
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    .our-team-cards{
+        flex-direction: row;
+    }
+
+    .profile-picture-member {
+        width: 160px;
+        height: 160px;
+    }
+
+    .profile-picture-background {
+        width: 178px;
+        height: 178px;
+        background-origin: content-box;
+    }
+}
